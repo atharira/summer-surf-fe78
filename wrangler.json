@@ -1,0 +1,30 @@
+{
+  "name": "apps-hotels",
+  "main": "./dist/index.js",
+  "assets": {
+    "directory": "./dist"
+  },
+  "compatibility_date": "2024-11-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "upload_source_maps": true,
+  "vars": {
+    "EXAMPLE_VALUE": "example_value"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "soft-queen-1f9b-d1",
+      "database_id": "e7ac51fc-da10-4c3e-8dea-c4a6a27a31b1"
+    }
+  ],
+  "workflows": [
+    {
+      "name": "apps-hotels-customer-workflow",
+      "binding": "CUSTOMER_WORKFLOW",
+      "class_name": "CustomerWorkflow"
+    }
+  ]
+}
